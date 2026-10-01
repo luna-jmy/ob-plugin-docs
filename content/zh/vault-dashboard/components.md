@@ -110,6 +110,8 @@ description: 14 种内置组件与自定义脚本组件
 | 今日图标 todayIcon | 👩‍💻 | 「今天」标记用的 emoji |
 | 事件 events | 空 | 事件列表：每条填 **日期**（`月-日`，如 `10-1`）、**标题**、**图标**（默认 🚩） |
 
+{{< screenshot src="images/vault-dashboard/component-random-timeline.png" caption="年度时间线组件" >}}
+
 ## 图表分析
 
 以下三个图表组件都依赖插件记录的仓库快照；装插件之前的部分按文件创建时间**估算**，图表中以特殊样式区分，可在设置中隐藏。

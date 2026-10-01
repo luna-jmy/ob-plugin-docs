@@ -110,6 +110,8 @@ A full-year SVG axis: the 12 months are laid out proportionally to their real le
 | Today icon `todayIcon` | 👩‍💻 | The emoji marking "today" |
 | Events `events` | empty | A list where each entry has a **date** (`month-day`, e.g. `10-1`), a **title**, and an **icon** (default 🚩) |
 
+{{< screenshot src="images/vault-dashboard/component-random-timeline.png" caption="The year timeline component" >}}
+
 ## Charts
 
 The three chart components all rely on plugin-recorded snapshots; the part from before installation is **estimated** from file creation times, drawn in a distinct style, and can be hidden in settings.
