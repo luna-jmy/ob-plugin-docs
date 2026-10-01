@@ -1,6 +1,5 @@
 # -- Main Menu（中文）--
-# 同一份菜单两个主题共用：Blowfish 读 name/pre/pageRef/weight，
-# Hextra 读 name/pageRef/weight + params.icon（GitHub 图标）；其余键互相忽略。
+# Hextra 读 name/pageRef/weight；GitHub 项走 params.icon 出图标。
 
 [[main]]
   name = "首页"
@@ -30,7 +29,6 @@
 [[main]]
   identifier = "github"
   name = "GitHub"
-  pre = "github"
   url = "https://github.com/luna-jmy"
   weight = 60
 

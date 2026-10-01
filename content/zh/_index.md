@@ -2,7 +2,7 @@
 title: 插件总览
 description: 纯本地、中英双语的 Obsidian 插件集
 weight: 1
-type: docs # Hextra：走 docs 布局（带左侧导航栏）；Blowfish 无此目录，自动回退默认布局
+type: docs # Hextra：走 docs 布局（带左侧导航栏）
 cascade:
   type: docs
 ---

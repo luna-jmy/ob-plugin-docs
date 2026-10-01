@@ -2,7 +2,7 @@
 title: Plugins
 description: Local-first, bilingual Obsidian plugins
 weight: 1
-type: docs # Hextra: docs layout (with left sidebar); Blowfish falls back to its default layouts
+type: docs # Hextra: docs layout (with left sidebar)
 cascade:
   type: docs
 ---

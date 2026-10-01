@@ -1,81 +1,5 @@
 # -- Theme Options --
-# 参数名参照主题 exampleSite/config/_default/params.toml
-# https://blowfish.page/docs/configuration/
-
-colorScheme = "blowfish"
-defaultAppearance = "light" # valid options: light or dark
-autoSwitchAppearance = true
-
-enableSearch = true
-enableCodeCopy = true
-enableStructuredBreadcrumbs = true
-
-highlightCurrentMenuArea = true
-smartTOC = true
-smartTOCHideUnfocusedChildren = false
-
-fingerprintAlgorithm = "sha512"
-
-[header]
-  layout = "floating" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur, floating
-  mobileMenuStyle = "dropdown" # valid options: fullscreen, dropdown
-
-[footer]
-  # Blowfish
-  showMenu = false
-  showCopyright = true
-  showThemeAttribution = true
-  showAppearanceSwitcher = true
-  showScrollToTop = true
-  # Hextra
-  enable = true
-  displayCopyright = true
-  displayPoweredBy = true
-  width = "normal"
-
-[homepage]
-  layout = "page" # valid options: page, profile, hero, card, background, landing, custom
-  showRecent = false
-  showRecentItems = 6
-  showMoreLink = false
-  cardView = false
-  cardViewScreenWidth = false
-
-[article]
-  showDate = false
-  showDateOnlyInArticle = false
-  showDateUpdated = false
-  showAuthor = false
-  showHero = false
-  showBreadcrumbs = true
-  showDraftLabel = true
-  showEdit = false
-  seriesOpened = false
-  showHeadingAnchors = true
-  showPagination = true
-  invertPagination = false
-  showReadingTime = false
-  showReadingProgress = true
-  showTableOfContents = true
-  showRelatedContent = false
-  showTaxonomies = false
-  showWordCount = false
-  showZenMode = false
-  sharingLinks = []
-
-[list]
-  showHero = false
-  showBreadcrumbs = true
-  showSummary = true
-  showTableOfContents = false
-  showCards = false
-  orderByWeight = true
-  groupByYear = false
-  cardView = false
-  cardViewScreenWidth = false
-  constrainItemsWidth = false
-
-# ---- 以下为 Hextra 专用参数（Blowfish 忽略；两主题并排安装、--theme 切换）----
+# 参数名参照 Hextra 文档：https://imfing.github.io/hextra/docs/
 
 [navbar]
   displayTitle = true
@@ -86,6 +10,12 @@ fingerprintAlgorithm = "sha512"
   # light | dark | system
   default = "system"
   displayToggle = true
+
+[footer]
+  enable = true
+  displayCopyright = true
+  displayPoweredBy = true
+  width = "normal"
 
 [search]
   enable = true
