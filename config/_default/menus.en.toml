@@ -1,0 +1,38 @@
+# -- Main Menu (English) --
+# One menu file shared by both themes: Blowfish reads name/pre/pageRef/weight,
+# Hextra reads name/pageRef/weight + params.icon (GitHub); other keys ignored.
+
+[[main]]
+  name = "Home"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Vault Dashboard"
+  pageRef = "/vault-dashboard"
+  weight = 20
+
+[[main]]
+  name = "Project Master"
+  pageRef = "/project-master"
+  weight = 30
+
+[[main]]
+  name = "Task Matrix"
+  pageRef = "/task-matrix"
+  weight = 40
+
+[[main]]
+  name = "Quick Journal"
+  pageRef = "/quick-journal"
+  weight = 50
+
+[[main]]
+  identifier = "github"
+  name = "GitHub"
+  pre = "github"
+  url = "https://github.com/luna-jmy"
+  weight = 60
+
+  [main.params]
+    icon = "github"

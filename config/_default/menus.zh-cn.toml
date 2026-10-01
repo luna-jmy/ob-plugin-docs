@@ -1,0 +1,38 @@
+# -- Main Menu（中文）--
+# 同一份菜单两个主题共用：Blowfish 读 name/pre/pageRef/weight，
+# Hextra 读 name/pageRef/weight + params.icon（GitHub 图标）；其余键互相忽略。
+
+[[main]]
+  name = "首页"
+  pageRef = "/"
+  weight = 10
+
+[[main]]
+  name = "Vault Dashboard"
+  pageRef = "/vault-dashboard"
+  weight = 20
+
+[[main]]
+  name = "Project Master"
+  pageRef = "/project-master"
+  weight = 30
+
+[[main]]
+  name = "Task Matrix"
+  pageRef = "/task-matrix"
+  weight = 40
+
+[[main]]
+  name = "Quick Journal"
+  pageRef = "/quick-journal"
+  weight = 50
+
+[[main]]
+  identifier = "github"
+  name = "GitHub"
+  pre = "github"
+  url = "https://github.com/luna-jmy"
+  weight = 60
+
+  [main.params]
+    icon = "github"

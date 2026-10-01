@@ -1,0 +1,7 @@
+{{/* 本地 notice shortcode（主题无关）：{{% notice style="info|warning|tip|note" title="标题" %}}…{{% /notice %}} */}}
+{{- $style := .Get "style" | default "note" -}}
+{{- $title := .Get "title" -}}
+<div class="ob-notice ob-notice--{{ $style }}">
+  {{- with $title }}<p><strong>{{ . }}</strong></p>{{ end }}
+  <div class="ob-notice__body">{{ .Inner | markdownify }}</div>
+</div>

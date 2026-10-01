@@ -1,0 +1,21 @@
+{{/* 截图占位 shortcode：文件还没放进 static/ 时渲染虚线占位框；放进去后同一写法自动变成真图。
+    用法：{{< screenshot src="images/<插件>/<名称>.png" caption="说明文字" >}} */}}
+{{- $src := .Get "src" -}}
+{{- $caption := .Get "caption" | default $src -}}
+{{- if fileExists (printf "static/%s" $src) -}}
+<figure class="ob-screenshot">
+  <a href="{{ relURL $src }}" target="_blank" rel="noopener">
+    <img src="{{ relURL $src }}" alt="{{ $caption }}" loading="lazy">
+  </a>
+  <figcaption>{{ $caption }}</figcaption>
+</figure>
+{{- else -}}
+<div class="ob-screenshot ob-screenshot--placeholder" role="note">
+  <span class="ob-screenshot__icon" aria-hidden="true">&#128247;</span>
+  <div class="ob-screenshot__body">
+    <strong>{{ $caption }}</strong>
+    <span class="ob-screenshot__hint">截图待补充 · Screenshot to be added</span>
+    <code>docs/static/{{ $src }}</code>
+  </div>
+</div>
+{{- end -}}

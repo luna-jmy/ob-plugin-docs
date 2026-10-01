@@ -1,0 +1,38 @@
+# -- Site Configuration --
+# 主题：Blowfish（docs/themes/blowfish 子模块）
+# 结构与参数名参照主题自带 exampleSite/config/_default/
+
+theme = "blowfish"
+baseURL = "/"
+defaultContentLanguage = "zh-cn"
+defaultContentLanguageInSubdir = true
+disableKinds = ["taxonomy", "term"]
+
+hasCJKLanguage = true
+summaryLength = 30
+enableEmoji = true
+
+[pagination]
+  pagerSize = 20
+
+[imaging]
+  anchor = "Center"
+
+# home 的 JSON 输出是 Blowfish 搜索索引需要的；用 Hextra 构建时会多报一条
+# 无害 WARN（found no layout file for "json"）——Hextra 的搜索索引由主题自带模板生成，
+# 不依赖它；该警告没有日志标识符，ignoreLogs 压不掉，忽略即可。
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Hextra 构建期从 jsdelivr 拉 flexsearch；本机 DNS 走代理 fake-IP（198.18.0.0/15），
+# 需放行该网段与 CDN 域名（其余为 Hugo 默认规则）。
+[security]
+  [security.http]
+    urls = [
+      '(?i)^https?://198\.18\.',
+      '(?i)^https?://cdn\.jsdelivr\.net/',
+      '(?i)^https?://[a-z0-9]',
+      '! (?i)^https?://\d+\.',
+      '! (?i)localhost',
+      '! (?i)^https?://[^/?#]*@',
+    ]
