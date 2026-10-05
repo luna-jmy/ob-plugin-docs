@@ -91,7 +91,7 @@ Lists notes created in the last N days; click to open. The filters are the same 
 
 ### Random quote
 
-Shows a random excerpt from the notes you point it at, with *copy* and *refresh* buttons — the copied format is "quote, blank line, — source". Source notes are expected to be named like 《Book Title》.
+Shows a random excerpt from the notes you point it at, with *copy* and *refresh* buttons — the copied format is "quote, blank line, — source". Source notes are expected to be named like 《Book Title》. Quotes are shown as plain text (inline Markdown is not rendered); candidate notes are collected by walking only the configured folder's subtree.
 
 | Parameter | Default | Description |
 | --- | --- | --- |
