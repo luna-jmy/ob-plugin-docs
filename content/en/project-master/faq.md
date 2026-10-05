@@ -34,5 +34,5 @@ The group picks a representative: the note with `main-project: true` if any, oth
 ## Known limitations
 
 - Mermaid export does not support per-task colors (a Mermaid limitation);
-- Gantt drag-rescheduling is **disabled on mobile** (it conflicts with touch scrolling) — edit dates through the dialog there;
+- **Desktop-only** plugin (`isDesktopOnly`) — the Gantt dashboard is designed for mouse and keyboard, and the plugin is not offered on mobile;
 - detection covers the scan folders only; project notes outside them never appear.

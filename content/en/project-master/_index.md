@@ -24,7 +24,7 @@ All data comes from your notes' **frontmatter** — no database, no changes to y
 ## Install
 
 {{% notice style="info" title="Requirements" %}}
-Obsidian **1.8.7** or newer.
+Obsidian **1.8.7** or newer, **desktop only** (not available on mobile — the Gantt interactions are designed for mouse and keyboard).
 {{% /notice %}}
 
 1. Download the latest release from [GitHub Releases](https://github.com/luna-jmy/ob-project-center/releases);

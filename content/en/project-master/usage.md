@@ -36,7 +36,7 @@ Whenever projects are missing from the chart, the top of the view states the **r
 
 ## Gantt chart
 
-- **Drag to reschedule**: drag a bar to move it, drag its ends to resize — releasing writes the new dates back to the note's `start_date` / `due_date` (drag is disabled on mobile to avoid conflicting with touch scrolling);
+- **Drag to reschedule**: drag a bar to move it, drag its ends to resize — releasing writes the new dates back to the note's `start_date` / `due_date`;
 - **Zoom**: month / week / day levels, month by default;
 - **Today line**: a marker for today, with a one-click *back to today*;
 - the chart exports to **SVG / JPG** images.

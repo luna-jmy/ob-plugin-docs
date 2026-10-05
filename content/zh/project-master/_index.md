@@ -24,7 +24,7 @@ Project Master（项目管理中心）把你的项目笔记变成一块可交互
 ## 安装
 
 {{% notice style="info" title="环境要求" %}}
-Obsidian **1.8.7** 及以上。
+Obsidian **1.8.7** 及以上，**仅桌面版**（移动端不提供安装——甘特交互为键鼠设计）。
 {{% /notice %}}
 
 1. 到 [GitHub Releases](https://github.com/luna-jmy/ob-project-center/releases) 下载最新版本；
