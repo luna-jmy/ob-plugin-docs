@@ -51,6 +51,9 @@ Pairing happens automatically wherever the base keys match once the marker is st
 The command *Open quick panel* — a Thino-like content stream:
 
 - a **card-style input** pinned at the top: pick a section and post — lists append per item, paragraphs hold one entry per day (reposting edits it);
+- **paragraph images**: with a paragraph target, both the input row and the edit
+  dialog carry a paperclip button — pick an image, it is stored in your
+  Obsidian attachments location and `![[…]]` lands at the cursor;
 - the **section filter** drives both the input and the stream: choose your ideas section and see only ideas;
 - **tasks**: tap the status marker at the line start to complete / cancel (markers are configurable); every record carries **edit / delete / jump-to-source / convert-to-task-list** actions;
 - **search**, optional **auto timestamps**; the stream refreshes automatically when journal files change;
