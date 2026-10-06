@@ -1,7 +1,7 @@
 locale = "en"
 label = "English"
 weight = 2
-title = "Luna's Obsidian Plugins"
+title = "ThinkDoKit · Obsidian Plugins"
 contentDir = "content/en"
 
 [params]
@@ -9,12 +9,4 @@ contentDir = "content/en"
   isoCode = "en"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "Bilingual user docs for four Obsidian plugins: Vault Dashboard, Project Master, Task Matrix, Quick Journal"
-
-[params.author]
-  name = "Luna"
-  headline = "Local-only, bilingual Obsidian plugins"
-  bio = "Obsidian plugin developer"
-  links = [
-    { github = "https://github.com/luna-jmy" },
-  ]
+  description = "Bilingual user docs for the ThinkDoKit (https://ppxyd.xin) companion Obsidian plugins: Vault Dashboard, Project Master, Task Matrix, Quick Journal"

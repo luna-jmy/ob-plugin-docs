@@ -7,7 +7,7 @@ cascade:
   type: docs
 ---
 
-这里收录 Luna 开发的全部 Obsidian 插件。它们共用同一套原则：
+这里收录 ThinkDoKit 配套的 Obsidian 插件（ThinkDoKit 介绍见 [ppxyd.xin](https://ppxyd.xin)）。它们共用同一套原则：
 
 - **纯本地运行**——无网络请求、无遥测、无账号，数据只存在你的 vault 与插件目录里；
 - **界面中英双语**，默认跟随 Obsidian 语言，也可在各自设置里手动指定；

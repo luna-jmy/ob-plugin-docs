@@ -1,5 +1,5 @@
 # -- Main Menu（中文）--
-# Hextra 读 name/pageRef/weight；GitHub 项走 params.icon 出图标。
+# Hextra 读 name/pageRef/weight；ThinkDoKit 为站外链接（url 直指 ppxyd.xin）。
 
 [[main]]
   name = "首页"
@@ -27,10 +27,6 @@
   weight = 50
 
 [[main]]
-  identifier = "github"
-  name = "GitHub"
-  url = "https://github.com/luna-jmy"
+  name = "ThinkDoKit"
+  url = "https://ppxyd.xin"
   weight = 60
-
-  [main.params]
-    icon = "github"

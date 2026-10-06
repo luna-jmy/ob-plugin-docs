@@ -7,7 +7,7 @@ cascade:
   type: docs
 ---
 
-This site hosts the documentation for all of Luna's Obsidian plugins. They share the same principles:
+This site hosts the documentation for the Obsidian plugins that accompany [ThinkDoKit](https://ppxyd.xin). They share the same principles:
 
 - **Fully local** — no network requests, no telemetry, no accounts; your data stays in your vault and the plugin folder;
 - **Bilingual UI** (Chinese / English) that follows your Obsidian language by default, with a manual override in each plugin's settings;

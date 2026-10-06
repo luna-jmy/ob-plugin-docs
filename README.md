@@ -39,8 +39,8 @@ Hextra 构建时从 jsdelivr 拉 flexsearch 搜索库（结果会缓存）；`hu
 ```
 config/_default/                 站点配置（Hugo 分文件结构）
   hugo.toml                      全局：主题、双语、输出格式、安全放行
-  languages.zh-cn.toml / .en.toml 各语言：标题、作者、contentDir
-  menus.zh-cn.toml / menus.en.toml 各语言：头部导航（4 插件 + GitHub）
+  languages.zh-cn.toml / .en.toml 各语言：标题、描述、contentDir
+  menus.zh-cn.toml / menus.en.toml 各语言：头部导航（4 插件 + ThinkDoKit）
   params.toml                    Hextra 主题参数
   markup.toml                    渲染设置
 content/zh/<插件>/…               中文文档

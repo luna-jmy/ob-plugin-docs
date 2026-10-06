@@ -1,5 +1,5 @@
 # -- Main Menu (English) --
-# Hextra reads name/pageRef/weight; the GitHub entry uses params.icon for its icon.
+# Hextra reads name/pageRef/weight; ThinkDoKit is an external link (url → ppxyd.xin).
 
 [[main]]
   name = "Home"
@@ -27,10 +27,6 @@
   weight = 50
 
 [[main]]
-  identifier = "github"
-  name = "GitHub"
-  url = "https://github.com/luna-jmy"
+  name = "ThinkDoKit"
+  url = "https://ppxyd.xin"
   weight = 60
-
-  [main.params]
-    icon = "github"
