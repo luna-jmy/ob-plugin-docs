@@ -12,11 +12,12 @@ The command *Open journal summary* opens the dashboard: data from every period g
 
 | Component | What it shows |
 | --- | --- |
-| **Capture bar** | A quick-capture strip at the top covering day / week / month / year sections |
+| **Capture bar** | A quick-capture strip at the top showing only the viewed period's (week / month / quarter / year) sections; hidden entirely when that period has none |
+| **Daily capture** | A card of buttons for every daily section, visible in all period views and reorderable / hideable in edit mode |
 | **Task chart** | Task completion metrics + bars; weekly / monthly periods aggregate by day, quarterly / yearly by month |
 | **Check-in summary** | A ratio bar per check-in field: done / not done / unrecorded |
 | **Data trend** | A line chart of one selected data field (with axes and latest / max / min) |
-| **Comparison radar** | Both series of a compare section on one radar chart (e.g. annual targets vs year-end review); week / month / year views read the matching period's note, the quarter view reads the annual one; the scale tops out at the larger of 10 and the observed maximum |
+| **Comparison radar** | Both series of a compare section on one radar chart (e.g. annual targets vs year-end review); week / month / quarter / year views read the matching period's note; the scale tops out at the larger of 10 and the observed maximum |
 | **Calendar** | Year / month chips plus a week-number column; clicking a date or week number opens the matching journal / review note; days with done tasks carry a badge, days with records a dot |
 | **Heatmaps** | One for task completion, one for record activity; the shape adapts to the period: week = 7 big cells, month = calendar cells, year = small cells |
 | **Recent notes** | The latest 8 entries of the content stream |

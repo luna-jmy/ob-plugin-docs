@@ -25,7 +25,7 @@ A section is anchored to a **heading** in the journal; its type decides how capt
 | **Paragraph** | one long free-form entry per day | the weekend review |
 | **Compare** | two paired numeric series per dimension, drawn as a radar chart in the summary | Wheel of Life: year-start targets vs year-end review |
 
-The default daily config follows this layout: `### 每日打卡` (4 items), `### 数据记录` (5 items), `## ✍️ 今日小结与回顾` (4 questions), `## 👀 GTD任务看板` (list, template `- [ ] {{value}}`), `## 💡 灵感与思考` (list + timestamp). Weekly and monthly each preset one review text section; annual presets none.
+The default daily config follows this layout: `### 每日打卡` (4 items), `### 数据记录` (5 items), `## ✍️ 今日小结与回顾` (4 questions), `## 👀 GTD任务看板` (list, template `- [ ] {{value}}`), `## 💡 灵感与思考` (list + timestamp). Weekly and monthly each preset one review text section; quarterly and annual preset none.
 
 ### Compare sections and series markers
 
@@ -44,7 +44,7 @@ A compare section records **two numeric series for the same dimensions** under o
 - [HealthFitness🏆:: 7]
 ```
 
-Pairing happens automatically wherever the base keys match once the marker is stripped — add or remove a dimension in one place and the two columns never drift apart. The quick-capture form shows a two-column numeric grid (dimensions × series), and the [comparison radar](summary/#components) in the summary draws both series on one radar chart (week / month / year views read the matching period's note; the quarter view reads the annual one).
+Pairing happens automatically wherever the base keys match once the marker is stripped — add or remove a dimension in one place and the two columns never drift apart. The quick-capture form shows a two-column numeric grid (dimensions × series), and the [comparison radar](summary/#components) in the summary draws both series on one radar chart (week / month / quarter / year views read the matching period's note).
 
 ## The quick panel
 
@@ -61,20 +61,21 @@ The command *Open quick panel* — a Thino-like content stream:
 
 ## Multi-period journals
 
-Settings are tabbed by **day / week / month / year**, each independently configured:
+Settings are tabbed by **day / week / month / quarter / year**, each independently configured:
 
 | Period | Default folder | Filename format |
 | --- | --- | --- |
 | Day | `500 Journal/540 Daily` | `YYYY-MM-DD` |
 | Week | `500 Journal/530 Weekly` | `YYYY-[W]ww` (ISO week) |
 | Month | `500 Journal/520 Monthly` | `YYYY-MM` |
+| Quarter | `500 Journal/515 Quarterly` | `YYYY-[Q]Q` |
 | Year | `500 Journal/510 Annual` | `YYYY` |
 
-Weekly-to-yearly **reviews** are simply text sections of the matching period (preset from the current template fields) — fill them via that section's quick-capture command. The summary view's capture bar covers all periods.
+Weekly-to-yearly **reviews** are simply text sections of the matching period (preset from the current template fields) — fill them via that section's quick-capture command. The summary's top capture strip only shows the sections of the period being viewed; daily sections live in the summary's *Daily capture* card.
 
 ## Template detection
 
-Already have your own journal template? Point settings at the template note, click once, and the section config for the period rebuilds from the template's **headings and inline fields** (templates for all four periods are recognized):
+Already have your own journal template? Point settings at the template note, click once, and the section config for the period rebuilds from the template's **headings and inline fields** (templates for all five periods are recognized):
 
 - display names default to the field keys with emoji stripped, and stay editable;
 - when every field key is a base key plus the same two emoji suffixes, the section is detected as **compare** (the two emoji become the series markers; labels default to the markers and stay editable);

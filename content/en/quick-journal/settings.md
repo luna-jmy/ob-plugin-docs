@@ -6,15 +6,16 @@ description: Period tabs, global settings, defaults
 
 Open via: Obsidian settings → Community plugins → **Quick Journal**.
 
-## Period tabs (day / week / month / year)
+## Period tabs (day / week / month / quarter / year)
 
-Four tabs with the same structure, independently configured:
+Five tabs with the same structure, independently configured:
 
 | Setting | Default (daily shown) | Description |
 | --- | --- | --- |
-| Folder | `500 Journal/540 Daily` | Where that period's journals live (weekly `530 Weekly`, monthly `520 Monthly`, annual `510 Annual`) |
-| Filename format | `YYYY-MM-DD` | moment format (weekly `YYYY-[W]ww`, monthly `YYYY-MM`, annual `YYYY`) |
+| Folder | `500 Journal/540 Daily` | Where that period's journals live (weekly `530 Weekly`, monthly `520 Monthly`, quarterly `515 Quarterly`, annual `510 Annual`) |
+| Filename format | `YYYY-MM-DD` | moment format (weekly `YYYY-[W]ww`, monthly `YYYY-MM`, quarterly `YYYY-[Q]Q`, annual `YYYY`) |
 | Template note | empty | The template path read by *Template detection* |
+| Show summary tab | On | When off, that period's tab disappears from the summary toolbar (at least one of week / month / quarter / year stays on; not present on the daily tab) |
 | Sections | five daily ones (see the [guide](usage/#the-six-section-types)) | Per section: heading, type, fields (key / label / unit), line template, series marker & label (compare), timestamp flag, panel flag |
 
 Which fields a section offers depends on its type: check-in / data / text sections take inline fields, list sections a line template, paragraphs need none. A compare section additionally configures two **series** (emoji marker + label); the keys written in the note are base key + series marker.
