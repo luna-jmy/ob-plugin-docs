@@ -15,9 +15,9 @@ Four tabs with the same structure, independently configured:
 | Folder | `500 Journal/540 Daily` | Where that period's journals live (weekly `530 Weekly`, monthly `520 Monthly`, annual `510 Annual`) |
 | Filename format | `YYYY-MM-DD` | moment format (weekly `YYYY-[W]ww`, monthly `YYYY-MM`, annual `YYYY`) |
 | Template note | empty | The template path read by *Template detection* |
-| Sections | five daily ones (see the [guide](usage/#the-five-section-types)) | Per section: heading, type, fields (key / label / unit), line template, timestamp flag, panel flag |
+| Sections | five daily ones (see the [guide](usage/#the-six-section-types)) | Per section: heading, type, fields (key / label / unit), line template, series marker & label (compare), timestamp flag, panel flag |
 
-Which fields a section offers depends on its type: check-in / data / text sections take inline fields, list sections a line template, paragraphs need none.
+Which fields a section offers depends on its type: check-in / data / text sections take inline fields, list sections a line template, paragraphs need none. A compare section additionally configures two **series** (emoji marker + label); the keys written in the note are base key + series marker.
 
 ## Global settings
 

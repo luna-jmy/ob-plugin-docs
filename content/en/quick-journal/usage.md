@@ -12,7 +12,7 @@ The ribbon icon or the command *Open quick capture* opens the form: **pick a sec
 - overwriting an existing value asks for **confirmation** (data, text, and paragraph sections);
 - a paragraph section reopens as an editor: the existing content comes along and saving overwrites it.
 
-## The five section types
+## The six section types
 
 A section is anchored to a **heading** in the journal; its type decides how capture works:
 
@@ -23,8 +23,28 @@ A section is anchored to a **heading** in the journal; its type decides how capt
 | **Text** | one sentence per inline field | the four daily reflection questions |
 | **List** | appends one line per item; line template configurable | `- [ ] {{value}}` for tasks |
 | **Paragraph** | one long free-form entry per day | the weekend review |
+| **Compare** | two paired numeric series per dimension, drawn as a radar chart in the summary | Wheel of Life: year-start targets vs year-end review |
 
 The default daily config follows this layout: `### 每日打卡` (4 items), `### 数据记录` (5 items), `## ✍️ 今日小结与回顾` (4 questions), `## 👀 GTD任务看板` (list, template `- [ ] {{value}}`), `## 💡 灵感与思考` (list + timestamp). Weekly and monthly each preset one review text section; annual presets none.
+
+### Compare sections and series markers
+
+A compare section records **two numeric series for the same dimensions** under one heading — the classic use is the annual "Wheel of Life": a target per dimension at the start of the year, a review score at the end. You configure **one section**:
+
+- fields are the dimensions (base keys such as `PersonalGrowth`, `HealthFitness`);
+- the section carries two **series**, each with a **series marker** (an emoji, 🎯 / 🏆 by default) and a **series label** for display (e.g. *Targets*, *Review*);
+- the field keys actually written in the note are the **base key + series marker**:
+
+```markdown
+### Wheel of Life
+- [PersonalGrowth🎯:: 7]
+- [HealthFitness🎯:: 6]
+- …
+- [PersonalGrowth🏆:: 8]
+- [HealthFitness🏆:: 7]
+```
+
+Pairing happens automatically wherever the base keys match once the marker is stripped — add or remove a dimension in one place and the two columns never drift apart. The quick-capture form shows a two-column numeric grid (dimensions × series), and the [comparison radar](summary/#components) in the summary draws both series on one radar chart (week / month / year views read the matching period's note; the quarter view reads the annual one).
 
 ## The quick panel
 
@@ -57,6 +77,7 @@ Weekly-to-yearly **reviews** are simply text sections of the matching period (pr
 Already have your own journal template? Point settings at the template note, click once, and the section config for the period rebuilds from the template's **headings and inline fields** (templates for all four periods are recognized):
 
 - display names default to the field keys with emoji stripped, and stay editable;
+- when every field key is a base key plus the same two emoji suffixes, the section is detected as **compare** (the two emoji become the series markers; labels default to the markers and stay editable);
 - folders are scanned recursively (templates in subfolders are found);
 - the filename format follows the period and is customizable.
 
