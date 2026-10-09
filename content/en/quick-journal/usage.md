@@ -55,9 +55,9 @@ The command *Open quick panel* — a Thino-like content stream:
   dialog carry a paperclip button — pick an image, it is stored in your
   Obsidian attachments location and `![[…]]` lands at the cursor;
 - the **section filter** drives both the input and the stream: choose your ideas section and see only ideas;
-- **tasks**: tap the status marker at the line start to complete / cancel (markers are configurable); every record carries **edit / delete / jump-to-source / convert-to-task-list** actions;
+- **tasks**: tap the status marker at the line start — both open ☐ and cancelled ✕ become completed ☑, completed returns to open (markers are configurable); every record carries **edit / delete / jump-to-source / convert-to-task-list** actions;
 - **search**, optional **auto timestamps**; the stream refreshes automatically when journal files change;
-- the top collapses (phone-friendly); *show completed tasks* is a persistent setting;
+- the top collapses (phone-friendly); *show completed tasks* and *show cancelled tasks* are persistent settings; non-task lines never enter the panel;
 - the **unfinished-task rollover button** carries unfinished tasks from the previous period's journal into today (the unfinished marker is configurable; default space + `>`).
 
 {{< screenshot src="images/quick-journal/quick-panel.png" caption="The quick panel: content stream + card input" >}}

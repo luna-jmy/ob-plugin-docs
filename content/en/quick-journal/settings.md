@@ -27,9 +27,10 @@ Which fields a section offers depends on its type: check-in / data / text sectio
 | Language | Follow Obsidian | Chinese / English |
 | Summary open location | Tab | The journal summary opens in a tab or the right sidebar |
 | Panel open location | Tab | The quick panel likewise |
-| Show completed tasks | Off | Persistent toggle for the panel and the summary |
+| Show completed tasks | On | Persistent toggle for the panel and the summary |
+| Show cancelled tasks | On | When off, cancelled tasks (✕ marker, tap to complete) no longer appear in the quick panel |
 | Include non-daily tasks | Off | Whether task charts / heatmaps count tasks outside the journal folders |
-| Task markers: open / done / cancelled / non-task | `[ ]` / `x` / `-` / … | The bracket markers used to recognize task lines |
+| Task markers: open / done / cancelled / non-task | `[ ]` / `x` / `-` / … | The bracket markers used to recognize task lines; non-task lines are skipped by the quick panel |
 | Unfinished marker | space + `>` | The marker recognizing unfinished tasks for the rollover button |
 | Auto timestamp | Off | Whether new panel entries get a timestamp automatically |
 | Trend field | empty | The field selected by default in the data-trend component |
