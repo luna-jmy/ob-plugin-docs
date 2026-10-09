@@ -10,7 +10,7 @@ The workspace is assembled from component tiles. Below are all **14 built-in com
 
 | Component | Needs | In one line |
 | --- | --- | --- |
-| [Vault stats](#vault-stats) | — | 9 vault metrics, click to drill down |
+| [Vault stats](#vault-stats) | — | 10 vault metrics, click to drill down |
 | [Today's tasks](#todays-tasks) | — | Today / overdue / recently completed from your journal folder |
 | [Quick jump](#quick-jump) | — | A filtered list of entry points to your notes |
 | [Command buttons](#command-buttons) | — | Turn any Obsidian command into a button |
@@ -30,13 +30,19 @@ The workspace is assembled from component tiles. Below are all **14 built-in com
 
 ### Vault stats
 
-Nine metrics to pick from: total notes, total words, attachments, links, open tasks, empty notes, short notes, orphans, tags, and more. **Click any number** to open the matching note list with keyword search (capped at 500 entries). The threshold for empty / short notes is a [setting](settings/).
+Ten metrics to pick from: total notes, recently added, readable words, attachments, folders, links, orphans, broken links, empty notes, and short notes. **Click any number** to open the matching note list with keyword search (capped at 500 entries). The threshold for empty / short notes is a [setting](settings/).
+
+"Broken links" counts notes whose body contains unresolved wiki / Markdown links (pointing at notes that don't exist); click to drill down into those notes.
 
 {{< screenshot src="images/vault-dashboard/component-vault-stats.png" caption="The vault stats component" >}}
 
 ### Today's tasks
 
 Scans daily notes in the journal folder and groups tasks into today / overdue / recently completed; click to jump to the exact line. Understands standard Markdown checkboxes plus Tasks-compatible emoji dates — see the [guide](usage/#todays-tasks). Read-only.
+
+| Parameter | Default | Description |
+| --- | --- | --- |
+| Show recently completed `showCompleted` | on | Turn off to hide the "recently completed" section |
 
 ### Quick jump
 
@@ -122,7 +128,7 @@ A bar chart of the **net** daily change in your vault's total word count over th
 
 ### Writing heatmap
 
-A GitHub-contribution-style heatmap where color depth encodes daily activity.
+A GitHub-contribution-style heatmap where color depth encodes daily activity. On mobile it automatically uses the square (quarter-width) layout — no need to narrow the tile manually.
 
 | Parameter | Default | Description |
 | --- | --- | --- |
@@ -138,7 +144,13 @@ A trend line of the number of internal links (wiki and Markdown) in your vault.
 
 ### Structure analysis
 
-Counts note distribution across top-level folders so you can see where your content actually lives. No parameters.
+Counts note distribution across top-level folders so you can see where your content actually lives.
+
+| Parameter | Default | Description |
+| --- | --- | --- |
+| Show note count `showNotes` | on | Show the note count per folder |
+| Show word count `showWords` | on | Show the total word count per folder |
+| Show subfolder count `showSubfolders` | off | Show how many subfolders each top-level folder has |
 
 ## Custom script component
 
