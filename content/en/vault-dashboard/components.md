@@ -32,7 +32,7 @@ The workspace is assembled from component tiles. Below are all **14 built-in com
 
 Ten metrics to pick from: total notes, recently added, readable words, attachments, folders, links, orphans, broken links, empty notes, and short notes. **Click any number** to open the matching note list with keyword search (capped at 500 entries). The threshold for empty / short notes is a [setting](settings/).
 
-"Broken links" counts notes whose body contains unresolved wiki / Markdown links (pointing at notes that don't exist); click to drill down into those notes.
+"Broken links" counts notes containing unresolved wiki / Markdown links (pointing at notes that don't exist), from the body and frontmatter properties alike; example links inside code blocks and inline code are not counted. Click to drill down into those notes.
 
 {{< screenshot src="images/vault-dashboard/component-vault-stats.png" caption="The vault stats component" >}}
 
