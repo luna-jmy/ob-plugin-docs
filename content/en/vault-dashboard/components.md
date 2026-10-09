@@ -10,7 +10,7 @@ The workspace is assembled from component tiles. Below are all **14 built-in com
 
 | Component | Needs | In one line |
 | --- | --- | --- |
-| [Vault stats](#vault-stats) | — | 10 vault metrics, click to drill down |
+| [Vault stats](#vault-stats) | — | 11 vault metrics, click to drill down |
 | [Today's tasks](#todays-tasks) | — | Today / overdue / recently completed from your journal folder |
 | [Quick jump](#quick-jump) | — | A filtered list of entry points to your notes |
 | [Command buttons](#command-buttons) | — | Turn any Obsidian command into a button |
@@ -30,9 +30,11 @@ The workspace is assembled from component tiles. Below are all **14 built-in com
 
 ### Vault stats
 
-Ten metrics to pick from: total notes, recently added, readable words, attachments, folders, links, orphans, broken links, empty notes, and short notes. **Click any number** to open the matching note list with keyword search (capped at 500 entries). The threshold for empty / short notes is a [setting](settings/).
+Eleven metrics to pick from: total notes, recently added, readable words, attachments, folders, links, orphans, broken links, orphan attachments, empty notes, and short notes. **Click any number** to open the matching note list with keyword search (capped at 500 entries). The threshold for empty / short notes is a [setting](settings/).
 
 "Broken links" counts notes containing unresolved wiki / Markdown links (pointing at notes that don't exist), from the body and frontmatter properties alike; example links inside code blocks and inline code are not counted. Click to drill down into those notes.
+
+"Orphan attachments" counts non-note files not referenced by any Markdown note; references follow the same rules as broken links (body wiki / Markdown links, embeds `![[…]]`, and frontmatter properties). Usage inside canvas, Base, and other non-note files does not count. Click to drill down into those files.
 
 {{< screenshot src="images/vault-dashboard/component-vault-stats.png" caption="The vault stats component" >}}
 
