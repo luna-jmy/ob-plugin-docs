@@ -99,12 +99,12 @@ Lists notes created in the last N days; click to open. The filters are the same 
 
 ### Random quote
 
-Shows a random excerpt from the notes you point it at, with *copy* and *refresh* buttons — the copied format is "quote, blank line, — source". Source notes are expected to be named like 《Book Title》. Quotes are shown as plain text (inline Markdown is not rendered); candidate notes are collected by walking only the configured folder's subtree.
+Shows a random excerpt from the notes you point it at, with *copy* and *refresh* buttons — the copied format is "quote, blank line, — source". Source notes are expected to be named like 《Book Title》; the source line shows the book title only (no .md extension). Inline Markdown in quotes is rendered (bold, ==highlight==, …); candidate notes are collected by walking only the configured folder's subtree, matching any of the given tags.
 
 | Parameter | Default | Description |
 | --- | --- | --- |
 | Folder `folder` | empty | Folder holding your excerpt notes |
-| Tag `tag` | empty | Tag that marks excerpt notes |
+| Tag `tag` | empty | Tag that marks excerpt notes; separate multiple tags with commas — any match counts |
 
 {{< screenshot src="images/vault-dashboard/component-random-quote.png" caption="The random quote component" >}}
 
