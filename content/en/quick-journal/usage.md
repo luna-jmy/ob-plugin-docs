@@ -58,7 +58,7 @@ The command *Open quick panel* — a Thino-like content stream:
 - **tasks**: tap the status marker at the line start — both open ☐ and cancelled ✕ become completed ☑, completed returns to open (markers are configurable); every record carries **edit / delete / jump-to-source / convert-to-task-list** actions;
 - **search**, optional **auto timestamps**; the stream refreshes automatically when journal files change;
 - the top collapses (phone-friendly); *show completed tasks* and *show cancelled tasks* are persistent settings; non-task lines never enter the panel;
-- the **unfinished-task rollover button** carries unfinished tasks from the previous period's journal into today (the unfinished marker is configurable; default space + `>`).
+- the **unfinished-task rollover button** carries unfinished tasks from the most recent N days of journals (default 7, configurable) into today, written oldest-first when several journals are involved; duplicates are kept as written, and nothing older than the window is searched (the unfinished marker is configurable; default space + `>`).
 
 {{< screenshot src="images/quick-journal/quick-panel.png" caption="The quick panel: content stream + card input" >}}
 

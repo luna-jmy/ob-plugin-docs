@@ -12,7 +12,7 @@ The workspace is assembled from component tiles. Below are all **14 built-in com
 | --- | --- | --- |
 | [Vault stats](#vault-stats) | — | 11 vault metrics, click to drill down |
 | [Today's tasks](#todays-tasks) | — | Today / overdue / recently completed from your journal folder |
-| [Quick jump](#quick-jump) | — | A filtered list of entry points to your notes |
+| [Recently updated](#recently-updated) | — | Your most recently modified notes, filterable |
 | [Command buttons](#command-buttons) | — | Turn any Obsidian command into a button |
 | [Quick create](#quick-create) | Templater | Create a note from a template in one click |
 | [Dataview query](#dataview-query) | Dataview | Run a Dataview query inside the dashboard |
@@ -46,14 +46,14 @@ Scans daily notes in the journal folder and groups tasks into today / overdue / 
 | --- | --- | --- |
 | Show recently completed `showCompleted` | on | Turn off to hide the "recently completed" section |
 
-### Quick jump
+### Recently updated
 
-A filterable list of note entry points, one click away.
+Your most recently modified notes (newest first), filterable by folder / tag / property, one click away.
 
 | Parameter | Default | Description |
 | --- | --- | --- |
 | Limit `limit` | 8 | How many entries to show |
-| Folder `folder` | empty | Restrict to a folder |
+| Folder `folder` | empty | Restrict to one or more folders: comma-separated, nested paths like `000 Inbox/Clippings` work, and a match includes its subfolders |
 | Tag `tag` | empty | Restrict to a tag |
 | Property `frontmatterKey` | empty | Filter by a frontmatter property |
 | Value `frontmatterValue` | empty | Used together with the property name |
@@ -88,7 +88,7 @@ Embeds an Obsidian **Bases** view (requires Obsidian 1.9+). Its only parameter i
 
 ### Recently created
 
-Lists notes created in the last N days; click to open. The filters are the same as [Quick jump](#quick-jump) (folder / tag / property / value), plus:
+Lists notes created in the last N days; click to open. The filters are the same as [Recently updated](#recently-updated) (folder / tag / property / value; folders accept comma-separated entries and nested paths), plus:
 
 | Parameter | Default | Description |
 | --- | --- | --- |

@@ -54,8 +54,10 @@ A task whose `⛔` dependency is unfinished gets a red left border.
 - **Search** matches description, file path, task ID, and dependency ID;
 - **Status chips**: open, to be started, overdue, completed, cancelled — with *Active only* / *Hide cancelled* / *All statuses* presets;
 - **Marker chips**: filter by what is actually inside the brackets (`[ ]`, `[x]`, `[-]`, `/`, or any custom marker); candidates come from your vault, so unused markers never appear;
+- **Folder chips**: filter by the folder tasks live in — an *Include / Exclude* dropdown sets the direction, and a row of folder chips picks the folders (candidates are the folders your tasks actually live in, and a match includes its subfolders);
 - **Start and due dates**: a preset (today, this week, this month, this year, custom) plus an explicit range; editing either end switches to custom automatically;
 - **Sort**: due ↑, due ↓, start ↑, priority, file name;
+- the **GTD Done column** hides itself when a filter leaves it empty, instead of taking up a cell;
 - the count shows how many indexed tasks survive the filters, and **Clear filters** returns to the neutral baseline.
 
 ## Drag and drop

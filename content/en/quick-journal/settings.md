@@ -32,6 +32,7 @@ Which fields a section offers depends on its type: check-in / data / text sectio
 | Include non-daily tasks | Off | Whether task charts / heatmaps count tasks outside the journal folders |
 | Task markers: open / done / cancelled / non-task | `[ ]` / `x` / `-` / … | The bracket markers used to recognize task lines; non-task lines are skipped by the quick panel |
 | Unfinished marker | space + `>` | The marker recognizing unfinished tasks for the rollover button |
+| Rollover lookback days | 7 | The rollover button only collects unfinished tasks from the most recent this many days of journals (1–365); nothing older is searched |
 | Auto timestamp | Off | Whether new panel entries get a timestamp automatically |
 | Trend field | empty | The field selected by default in the data-trend component |
 | Summary queries | empty | The query blocks entered manually into the layout (title + code), maintained in edit mode |

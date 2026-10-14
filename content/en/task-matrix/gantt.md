@@ -26,6 +26,12 @@ The Gantt chart is a **mode**, not a fifth panel: click *Gantt mode* in the tool
 
 Sections group by **folder, note, GTD state, or quadrant** — or turn grouping off for a single flat list. Grouping by note gives one section per note (named after the note, ordered by path), keeping a note's tasks together even when they span several folders' worth of projects. Section keys for folder, GTD state, and quadrant are shared with the panel views: collapsing a section in the Gantt collapses the matching container there too.
 
+## Single-note mode
+
+The toolbar's **Focus note** search box: type a path or note name, pick one of the notes that carry dated tasks, and the Gantt draws only that note — the timeline and the Mermaid preview / export share the same model, so the scope never drifts. While focused, a chip with the note name sits next to the search box; click it to leave.
+
+The note's more-options menu (top right of the editor) and the file-explorer context menu carry a **View in Gantt chart** entry: it opens Task Matrix focused on that note in one click (the entry only appears for Markdown the plugin would index).
+
 ## Mermaid preview and export
 
 The Gantt area has two tabs: the **timeline** and a **Mermaid preview**. The preview is generated from the current Gantt state (filters, grouping, collapsed sections), so it is never a second source of truth: there is no code box to edit, and collapsed sections are left out just like on screen.
