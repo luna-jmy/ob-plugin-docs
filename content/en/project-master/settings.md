@@ -36,6 +36,7 @@ A table pairing each piece of information with the frontmatter field name it liv
 | Default sort | Due date ascending | List ordering |
 | Default zoom | Month | Gantt time level |
 | Default year filter | Current year | The year preset on open |
+| Sidebar collapsed on open | Off | Hide the left panel when the board opens (restore via "Show sidebar" in the toolbar) |
 | Notes per group | 5 | Cap on related notes listed under each group |
 | Bar duration label | Off | Whether to show day counts on Gantt bars |
 | Card font scale | 100% | Panel card text scaling |
